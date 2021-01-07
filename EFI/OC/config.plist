@@ -344,6 +344,10 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
+				<key>alc-delay</key>
+				<integer>1000</integer>
+				<key>alc-verbs</key>
+				<integer>1</integer>
 				<key>device-id</key>
 				<data>
 				SKMAAA==
@@ -620,7 +624,7 @@
 				<key>BundlePath</key>
 				<string>AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcm4360_Injector.kext</string>
 				<key>Comment</key>
-				<string>AirPortBrcm4360_Injector (should be disabled with Big Sur)</string>
+				<string>AirPortBrcm4360_Injector (disable for Big Sur)</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -636,9 +640,9 @@
 				<key>BundlePath</key>
 				<string>AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcmNIC_Injector.kext</string>
 				<key>Comment</key>
-				<string>AirPortBrcmNIC_Injector (should be disabled with Big Sur)</string>
+				<string>AirPortBrcmNIC_Injector</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>

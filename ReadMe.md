@@ -33,16 +33,12 @@ The purpose of this guide is to provide instructions for installing macOS (High 
 - Secure Boot : Disabled
 - Kernel Debug Serial Port : Legacy UART \
  `Advanced -> Debug settings -> Legacy UART`
+- Force unlock on all GPIO pads : Enabled `without this Trackpad won't work` \
+`Advanced -> PCH-IO Configuration -> Security Configuration -> BIOS Lock`
 - CFG Lock (MSR_E2) : Disabled \
 `Advanced -> Power & Performance -> CPU - Power Management -> View/Configure CPU Lock Options -> CFG Lock`
 - DVMT Pre-Allocated Memory : 64MB \
 `Advanced -> System Agent (SA) Configuration -> Graphics Configuration -> DVMT Pre-Allocated Memory`
-
-### Trackpad
-- Touch Pad Interrupt Mode : GPIO Interrupt \
-This setting is not available in BIOS, even in Advanced menu (BIOS Modding might help). Moddifed grub shell didn't help either (setup_var/setup_var2) \
-Only thing that worked for me was Insyde H2OUVE utiliity (Windows), so do it before macOS Installation or you'll have to install Windows afterwards to get Trackpad working
-- Run `Trackpad_GPIO-Enable.bat` from windows
 
 ## Pre-Installation
 
