@@ -17,14 +17,12 @@ The purpose of this guide is to provide instructions for installing macOS Big Su
 - BIOS : 8JCN54WW 6/15/2020
 
 ## Issues
-- Headphone jack sense isn't perfect, need some optimizations
 - Trackpad buttons don't work without active finger on trackpad
 - Nvidia GTX 1050Ti (No Optimus Support under macOS)
 
 ## BIOS
 #### How to Access Advanced Menu
-
-    press `FN + D + O` and then reboot computer, after reboot Screen with Blue Box will be shown, Now press F2 to access Advanced Menu 
+`Press FN + D + O and Then Reboot Laptop, Screen with Blue Box will be shown, Now press F2 to access BIOS Advanced Menu`
 
 ### Required BIOS Configration
 
@@ -45,6 +43,12 @@ The purpose of this guide is to provide instructions for installing macOS Big Su
 - Follow [Creating the USB | Dortania](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) to prepare Bootable USB Installer
 
 - Copy EFI folder to Prepared USB Flash Drive
+
+## Post-Installation
+- Run following command in terminal to Fix Headphone Audio 
+```
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/chilledHamza/Hackintosh_Legion_Y7000_2018/main/AudioFix.sh)"
+```
 
 ## Credit
 - [Acidanthera](https://github.com/acidanthera)
