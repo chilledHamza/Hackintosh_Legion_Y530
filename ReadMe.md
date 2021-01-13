@@ -1,4 +1,4 @@
-The purpose of this guide is to provide instructions for installing macOS (High Sierra and above) on the Lenovo Legion Y530/Y7000 (2018) laptop
+The purpose of this guide is to provide instructions for installing macOS Big Sur (or older versions) on the Lenovo Legion Y530/Y7000 (2018) laptop
 
 
 ## Computer Specification
@@ -17,8 +17,8 @@ The purpose of this guide is to provide instructions for installing macOS (High 
 - BIOS : 8JCN54WW 6/15/2020
 
 ## Issues
-- Headphone jack sense doesn't work if plugged-in at cold boot
-- Trackpad buttons don't work (as of VoodooI2C v2.6.0, button are recoginized but only if a Finger is placed on trackpad, further work needs to be done to make the buttons work when transducer/finger count is zero)
+- Headphone jack sense isn't perfect, need some optimizations
+- Trackpad buttons don't work without active finger on trackpad
 - Nvidia GTX 1050Ti (No Optimus Support under macOS)
 
 ## BIOS
@@ -40,18 +40,11 @@ The purpose of this guide is to provide instructions for installing macOS (High 
 - DVMT Pre-Allocated Memory : 64MB \
 `Advanced -> System Agent (SA) Configuration -> Graphics Configuration -> DVMT Pre-Allocated Memory`
 
-## Pre-Installation
+## USB Creation
 
-##### macOS -> [How to create a bootable installer for macOS](https://support.apple.com/en-us/HT201372)
-- Mount EFI partition of USB with `diskutil mount` command
-- Copy EFI folder to root of EFI partition of USB
+- Follow [Creating the USB | Dortania](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) to prepare Bootable USB Installer
 
-##### Windows or macOS (require python) -> [gibMacOS](https://github.com/corpnewt/gibMacOS)
-
-- Replace EFI folder with in USB Flash Drive
-
-## Post-Installation
-- Mount system EFI partition, and copy EFI folder to root of system EFI partition
+- Copy EFI folder to Prepared USB Flash Drive
 
 ## Credit
 - [Acidanthera](https://github.com/acidanthera)
