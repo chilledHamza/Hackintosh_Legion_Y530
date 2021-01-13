@@ -129,6 +129,17 @@
 						EQAAAA==
 						</data>
 					</dict>
+					<key>SS02</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>9</integer>
+						<key>name</key>
+						<string>SS02</string>
+						<key>port</key>
+						<data>
+						EgAAAA==
+						</data>
+					</dict>
 					<key>SS03</key>
 					<dict>
 						<key>UsbConnector</key>
