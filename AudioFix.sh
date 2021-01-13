@@ -18,9 +18,9 @@ ALC_VERB_BINARY=alc-verb
 URL=https://raw.githubusercontent.com/chilledHamza/Hackintosh_Legion_Y7000_2018/main/ALCPlugFix/
 
 echo "Downloading required file"
-sudo curl -o $TMP_PATH$ALCPlugFIX_BINARY "$ALCPlugFIX_BINARY"
-sudo curl -o $TMP_PATH$ALC_VERB_BINARY "$ALC_VERB_BINARY"
-sudo curl -o $TMP_PATH$ALC_DAEMON_CONFIG "$ALC_DAEMON_CONFIG"
+sudo curl -o $TMP_PATH$ALCPlugFIX_BINARY "$URL$ALCPlugFIX_BINARY"
+sudo curl -o $TMP_PATH$ALC_VERB_BINARY "$URL$ALC_VERB_BINARY"
+sudo curl -o $TMP_PATH$ALC_DAEMON_CONFIG "$URL$ALC_DAEMON_CONFIG"
 
 if [ ! -d "$BIN_PATH" ] ; then
     mkdir $BIN_PATH
