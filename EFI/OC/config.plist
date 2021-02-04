@@ -64,11 +64,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SMBus</string>
+				<string>SMBus + MCHC </string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
+				<string>SSDT-SBUS-MCHC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
