@@ -32,6 +32,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Turn off dGPU on macOS</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-NoHybGfx.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Inject plugin-type=1</string>
 				<key>Enabled</key>
 				<true/>
@@ -341,10 +349,6 @@
 				AACbPg==
 				</data>
 				<key>enable-backlight-registers-fix</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>disable-external-gpu</key>
 				<data>
 				AQAAAA==
 				</data>
