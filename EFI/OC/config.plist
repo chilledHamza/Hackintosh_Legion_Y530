@@ -56,14 +56,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Real Time Clock</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-RTC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SMBus + MCHC </string>
 				<key>Enabled</key>
 				<true/>
