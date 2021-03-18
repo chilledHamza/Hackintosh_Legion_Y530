@@ -70,14 +70,6 @@
 				<key>Path</key>
 				<string>SSDT-TPD0.aml</string>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Wake FIx</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-WAK.aml</string>
-			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
@@ -173,40 +165,6 @@
 				<key>Replace</key>
 				<data>
 				WFExMg==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_WAK to ZWAK</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				X1dBSwk=
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				WldBSwk=
 				</data>
 				<key>ReplaceMask</key>
 				<data>
