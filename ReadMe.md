@@ -50,7 +50,7 @@ Note : Avoid logging into iCloud after Installation, Might risk getting apple ac
 ## Post-Installation
 - Run following command in terminal to Fix Headphone Audio
 ```
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/chilledHamza/Hackintosh_Legion_Y7000_2018/main/AudioFix.sh)"
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/chilledHamza/Hackintosh_Legion_Y530/main/AudioFix.sh)"
 ```
 
 ## Fixing iServices
