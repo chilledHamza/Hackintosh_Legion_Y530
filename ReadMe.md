@@ -1,9 +1,9 @@
-The purpose of this guide is to provide instructions for installing macOS Big Sur (or older versions) on the Lenovo Legion Y530 laptop (Rescuer Y7000 (2018) will work as well, chinese varient of Y530)
+The purpose of this guide is to provide instructions for installing macOS Big Sur (or older versions) on the Lenovo Legion Y530 laptop (Rescuer Y7000 (2018) will work as well, Chinese variant of Y530)
 
 
 ## Computer Specification
 
-#### Lenovo Legion Y530
+#### Lenovo Legion Y530-15ICH
 
 - Intel® Core™ i7-8750H (Coffee-Lake)
 - 16GB RAM DDR4 2667MHz
@@ -13,7 +13,7 @@ The purpose of this guide is to provide instructions for installing macOS Big Su
 - Realtek ALC236 Audio Controller
 - RTL8168H Gigabit Ethernet
 - Dell Wireless DW-1830 Wi-Fi + BT 4.1 LE (BCM943602BAED + BCM20703A1)
-- Synaptics Precission Trackpad -> ELAN061B (check Issues) 
+- Synaptics Precision Trackpad -> ELAN061B (check Issues) 
 - BIOS : 8JCN56WW 11/30/2020
 
 ## Issues
@@ -24,15 +24,15 @@ The purpose of this guide is to provide instructions for installing macOS Big Su
 #### How to Access Advanced Menu
 `Press FN + D + O and Then Reboot Laptop, Screen with Blue Box will be shown, Now press F2 to access BIOS Advanced Menu`
 
-### Required BIOS Configration
+### Required BIOS Configuration
 
 - Boot Mode: UEFI
 - Storage Mode: AHCI
 - Secure Boot : Disabled
 - Kernel Debug Serial Port : Legacy UART \
  `Advanced -> Debug settings -> Legacy UART`
-- Force unlock on all GPIO pads : Enabled `without this Trackpad won't work` \
-`Advanced -> PCH-IO Configuration -> Security Configuration -> BIOS Lock`
+- Force unlock on all GPIO pads : Enabled `without this Trackpad will not work on macOS` \
+`Advanced -> PCH-IO Configuration -> Security Configuration -> Force unlock on all GPIO pads`
 - CFG Lock (MSR_E2) : Disabled \
 `Advanced -> Power & Performance -> CPU - Power Management -> View/Configure CPU Lock Options -> CFG Lock`
 - DVMT Pre-Allocated Memory : 64MB \
