@@ -51,12 +51,12 @@ Note : Avoid logging into iCloud after Installation, Might risk getting apple ac
 ```
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/chilledHamza/Hackintosh_Legion_Y530/main/AudioFix.sh)"
 ```
-## Trackpad
+### Trackpad
 - Uncheck "Force Click and haptic feedback" in Trackpad Preferences (trackpad buttons will not work without this)
 - Bundled VoodooI2CHID is for ELAN061B (workaround trackpad-button issue)
 - SYNA2B46 users should replace VoodooI2CHID with original version from [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/releases/)
 
-## Fixing iServices
+### Fixing iServices
 - Follow [Fixing iMessage and other iServices | Dortania](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)
 
 ## Credit
