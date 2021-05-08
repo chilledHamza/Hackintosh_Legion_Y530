@@ -13,11 +13,10 @@ The purpose of this guide is to provide instructions for installing macOS Big Su
 - Realtek ALC236 Audio Controller
 - RTL8168H Gigabit Ethernet
 - Dell Wireless DW-1830 Wi-Fi + BT 4.1 LE (BCM943602BAED + BCM20703A1)
-- Synaptics Precision Trackpad -> ELAN061B (check Issues) 
+- Synaptics Precision Trackpad (ELAN061B)
 - BIOS : 8JCN56WW 11/30/2020
 
 ## Issues
-- ELAN061B have strange behavior with Buttons, Left Button works as Right Button and Right Button does not work (for the most part). SYNA2B46 works perfectly now (Disable -> "Force Click and haptic feedback")
 - Nvidia GTX 1050Ti (No Optimus Support under macOS)
 
 ## BIOS
@@ -52,6 +51,10 @@ Note : Avoid logging into iCloud after Installation, Might risk getting apple ac
 ```
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/chilledHamza/Hackintosh_Legion_Y530/main/AudioFix.sh)"
 ```
+## Trackpad
+- Uncheck "Force Click and haptic feedback" in Trackpad Preferences (trackpad buttons will not work without this)
+- Bundled VoodooI2CHID is for ELAN061B (workaround trackpad-button issue)
+- SYNA2B46 users should replace VoodooI2CHID with original version from [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/releases/)
 
 ## Fixing iServices
 - Follow [Fixing iMessage and other iServices | Dortania](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)
