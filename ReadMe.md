@@ -1,4 +1,4 @@
-The purpose of this guide is to provide instructions for installing macOS Big Sur (or older versions) on the Lenovo Legion Y530 laptop (Rescuer Y7000 (2018) will work as well, Chinese variant of Y530)
+The purpose of this guide is to provide instructions for installing macOS Monterey or macOS Big Sur on the Lenovo Legion Y530 laptop (Rescuer Y7000 (2018) will work as well, Chinese variant of Y530). macOS Catalina or older will need few changes to config.plist. Check [Acidanthera Updates: August 2021](https://dortania.github.io/hackintosh/updates/2021/08/02/acidanthera-august.html) for details. 
 
 
 ## Computer Specification
@@ -12,12 +12,13 @@ The purpose of this guide is to provide instructions for installing macOS Big Su
 - 2TB HP EX950 PCI-E Gen3 x4 NVMe SSD
 - Realtek ALC236 Audio Controller
 - RTL8168H Gigabit Ethernet
-- Dell Wireless DW-1830 Wi-Fi + BT 4.1 LE (BCM943602BAED + BCM20703A1)
+- Lenovo BCM94352Z (FRU:04X6020, PN:20-200480)
 - Synaptics Precision Trackpad (ELAN061B)
 - BIOS : 8JCN56WW 11/30/2020
 
 ## Issues
 - Nvidia GTX 1050Ti (No Optimus Support under macOS)
+- Bluetooth have some issues on macOS Monterey
 
 ## BIOS
 #### How to Access Advanced Menu
