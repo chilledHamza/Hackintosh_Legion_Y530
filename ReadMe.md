@@ -13,12 +13,12 @@ The purpose of this guide is to provide instructions for installing macOS Monter
 - Realtek ALC236 Audio Controller
 - RTL8168H Gigabit Ethernet
 - Lenovo BCM94352Z (FRU:04X6020, PN:20-200480)
-- Synaptics Precision Trackpad (ELAN061B)
+- ELAN Precision Trackpad (ELAN061B)
 - BIOS : 8JCN56WW 11/30/2020
 
 ## Issues
 - Nvidia GTX 1050Ti (No Optimus Support under macOS)
-- Bluetooth have some issues on macOS Monterey
+- macOS Monterey: AirDrop -> Can Receive, Sending fails
 
 ## BIOS
 #### How to Access Advanced Menu
